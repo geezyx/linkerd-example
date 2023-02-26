@@ -1,0 +1,10 @@
+apiVersion: policy.linkerd.io/v1alpha1
+kind: AuthorizationPolicy
+metadata:
+  name: example
+  namespace: default
+spec:
+  requiredAuthenticationRefs: []
+  targetRef:
+    kind: Namespace
+    name: default
